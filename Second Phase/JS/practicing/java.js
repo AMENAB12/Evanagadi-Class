@@ -18,3 +18,4 @@ return av;
 var k = average(100, 50)
 console.log(k)
 /**Arrow Function */
+gsdfgfdg
