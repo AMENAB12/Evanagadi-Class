@@ -1,6 +1,6 @@
 /**Function */
 var n = 0;
-console.log(av)
+console.log(n)
 function adder(x, y) {
     var c;
     c = x + y;
@@ -18,3 +18,17 @@ return av;
 var k = average(100, 50)
 console.log(k)
 /**Arrow Function */
+var  kebede = function () {
+    console.log("kebede");
+}
+function anotherfunction(){
+    return "Hi There";
+
+}
+const anotherfunction = () => {
+    return "Hi There";
+}
+const anotherfunction = function (){
+    return "Hi There";
+}
+const anotherfunction = () => "Hi There";
