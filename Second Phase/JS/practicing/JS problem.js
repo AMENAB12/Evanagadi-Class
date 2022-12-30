@@ -72,4 +72,153 @@ return ANI;
 }
 var AN = animal(2, 4, 4)
 console.log(AN)
-/**Q10  */
+/**Q10 -Create a function that takes an array containing only TWO numbers as a parameter and returns a value that is 3 times the first element of the array*/  //what about the rest ?
+function times3(x,y){
+ let times3 = [x, y]
+
+return 3*[0];
+}
+var Q = times3(2, 3)
+console.log(Q)
+/** Or */
+// function times3(num1, num2){
+
+
+//     return (num1 * 3 + num2);
+//     }
+    
+//     console.log(times3())
+/**11 */
+// function same(num1, num2){
+//    return num1 === num2
+// }
+// console.log(same)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 /**A2CV Problems */
+// FizzBuzz
+// function fizzBuzz(){
+//     var i;
+//         for (i = 0 ; i <= 100; i++){
+//             if (i % 3 == 0 && i % 5 == 0){
+//                 alert("FizzBuzz");
+//             }
+//             else if (i % 3 == 0){
+//                 alert("Fizz");
+//             }
+//             else if (i % 5 == 0){
+//                 alert("Buzz");
+//             }
+//             else {
+//                 alert(i)
+//             }
+//         }
+//     }
+//     console.log(fizzBuzz())
+    //or
+//     var output = [];
+// var count = 1;
+
+// function fizzBuzz(){
+
+
+//     if (count % 3 == 0 && count % 5 == 0 ){
+        
+        
+//        output.push("FizzBuzz")  
+//     }
+//     if (count % 3 == 0){
+//             output.push("Fizz") 
+//         }
+//         if (count % 5 == 0){
+//             output.push("Buzz") 
+//         }
+
+//     else {
+//         output.push(count);
+//     }
+   
+//     count++; 
+    
+//     console.log(output);
+// }
+// var output = [];
+
+
+// function fizzBuzz(){
+// for (var count = 1; count <= 100; count++){
+// 	if (count % 3 == 0 && count % 5 == 0 ){  
+//        output.push("FizzBuzz")  
+//     } else if (count % 3 == 0){
+//         output.push("Fizz")
+// 	} else if (count % 5 == 0){
+// 		output.push("Buzz")
+// 	} else {
+// 		output.push(count);
+//     }
+// }
+//     console.log(output);
+// }
+/**Who's Buying Lunch? Code Challenge */
+// function whosPaying(names) {
+    
+//     /******Don't change the code above*******/
+        
+//         //Write your code here.
+//         var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+        
+        
+        
+//         console.log(names[3] + " is going to buy lunch today!");
+    
+    
+//     /******Don't change the code below*******/    
+//     }
+    // alert(whosPaying())
+    // // to authomate it
+    // function whosPaying(names) {
+    
+    //     /******Don't change the code above*******/
+            
+    //         //Write your code here.
+    //         names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+    //     var numberOfPeople = names.length;
+    //         var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    //         var randomPerson = names[randomPersonPosition];
+    //         return randomPerson + " is going to buy lunch today!";
+        
+        
+            
+    //     /******Don't change the code below*******/    
+    //     }
+    //     alert(whosPaying())
+    //     typeof("12")
+        
