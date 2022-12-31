@@ -349,4 +349,4 @@ console.log(first10())
     //     }
     //     alert(whosPaying())
     //     typeof("12")
-        sosina
+        
