@@ -13,26 +13,25 @@ return x - y;
 }
 console.log(mySecond(9, 5))
 /**Q3 ● Define a function called myThird that takes a parameter and prints the parameter on the console. But, it uses mySecond function to print the parameter on the console.*/
-function myThird (x, y){
-    return mySecond(x, y) * 6;
+function myThird (k, p){
+    return mySecond(k, p) * 6;
 }
 console.log(myThird(6, 2))
 /**● Write a function named myFourth that takes an array as a parameter and prints only the first value of the array on the console. Remember, this question is here to explain the concept of function delegation in JavaScript. */
 
 function myFourth (x){
    var t = [x];
-   x++;
+//    x +1;
     return t[0];
 }
 console.log(myFourth(5,2,2));
 /** ● Write a function named myFifth that takes an array with two numbers in it as a parameter and prints the sum of the two numbers on console*/
-function myFifth (x,y){
-    var  c = [x,y]
-    return c[0] + c[1];
+function myFifth (c){
+    
+    console.log( c[0] + c[3]);
 
 }
-var n = 
-console.log(myFifth(1,3))
+myFifth([1,3,5,8,6,7])
 /**Q6 ● Write a function that takes an integer minutes and converts it to seconds.*/
 function convert(m){
 
@@ -41,7 +40,7 @@ return m * 60;
 console.log(convert(5))
 /**Q7 ● Create a function that takes a number as a parameter, increments the number by +1 and returns the result.*/
 function addition(num){
-    return num++;
+    return num +1;
 
 }
 console.log(addition(5))
@@ -56,15 +55,14 @@ function animal(ch, c, p,){
 
 return (ch*2 + c*4 + p*4);
 }
-console.log(animal(2, 4, 4))
+console.log(animal(5, 7, 9))
 /**Q10 -Create a function that takes an array containing only TWO numbers as a parameter and returns a value that is 3 times the first element of the array*/  //what about the rest ?
 function times3(x,y){
  let times3 = [x, y]
 
-return 3*times3[0];
+return 3*times3[0,1]
 }
-
-console.log(times3(7, 4))
+console.log(times3(5, 4),times3(2,5))
 /** Or */
 // function times3(num1, num2){
 
@@ -78,6 +76,151 @@ console.log(times3(7, 4))
 //    return num1 === num2
 // }
 // console.log(same)
+/**Q11- Create a function that returns true when num1 is equal to  num2 otherwise return false.
+ */
+
+function trueFalse(num1,num2){
+if(isNaN(num1) && isNaN(num2)){
+    return "Please use only number value"
+}
+
+    if(num1 == num2)
+    {
+return "True";
+    } else {
+        return "False"
+    }
+
+}
+console.log(trueFalse(4,7))
+/**Q12 - Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false. */
+        /** Pseudo Code
+         * declare function divisible(num)
+         * check if isNaN(num) return "please use only number value"
+         * if(num % 100 == 0)
+         * return "True"
+         * else return "False"
+         * 
+         * console.log(divisible())
+        */
+/** Code */
+function divisible(num){
+    if(isNaN(num)){
+        return "Please use only number value";
+    
+    }
+    if(num % 100 === 0){
+        return "True";
+    } else {
+        return "False";
+    }
+}
+console.log(divisible("100"));
+/**Q13 - Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers */
+  /** Pseudo Code
+   * declare function oddEven(num)
+   * check if iaNaN(num)
+   * return "Please use number value only"
+   * if(num % 2 == 0)
+   * return "It is Even Number"
+   * if(num % 2 != 0)
+   * return "It is Odd number"
+   * 
+   * console.log(oddEven())
+   */
+/**Code */
+function oddEven(num){
+    if(isNaN(num)){
+        return "please use number value only";
+    }
+    if(num % 2 == 0){
+        return "It is an Even number";
+    } else if (num % 2 != 0){
+        return "It is an Odd number";
+    }
+}
+console.log(oddEven());
+/**Q14 - Create a function that returns
+○ “Invalid score” if score is above 100 or score is a negative number
+○ “Grade A” when score is between 90 and 100 (both 90 and 100 included)
+○ “Grade B” when score is between 80 and 89 (both 80 and 89 included)
+○ “Grade C” for any score below 79 */
+/** pseudo code 
+ * declare function studentScore(score)
+ * check if isNaN(score)
+ * return "please use only number value"
+ * if(score > 0 || score < 0)
+ * return "Invalide"
+ * else if (90 <= score && score <= 100)
+ * return "Grade A"
+ * else if(80 <= score && score <= 89)
+ * return "Grade B"
+ * else
+ * return "Grade C"
+ * 
+ * console.log(studentScore())
+*/
+/**Code */
+function studentScore(score){
+if(isNaN(score)){
+    return "please use only number value";
+}
+if(score > 100 || score < 0){
+    return "Invalide"
+}
+else if (90 <= score && score <= 100){
+    return "Grade A" 
+}
+else if(80 <= score && score <= 89){
+    return "Grade B"  
+}
+else {
+    return "Grade C"  
+}
+}
+console.log(studentScore())
+
+
+/** Decision loop and object oriented programing:
+ *             practice exercises */
+/**Question 1
+● Write a function that prints the first 10 integers on the console starting from the number 1 using the JavaScript for loop.*/
+
+/**Pseudo Code
+ * declare function first10()
+ * 
+ * for (i = 1; i <= 10; i++)
+ * 
+ * 
+ * console.log(first10())
+ */
+/**Code  */
+function first10(){
+
+    for(var i = 1; i <= 10; i++){
+    console.log(i)
+    
+    }
+}
+console.log(first10())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,4 +349,4 @@ console.log(times3(7, 4))
     //     }
     //     alert(whosPaying())
     //     typeof("12")
-        
+        sosina
