@@ -12,12 +12,12 @@ function mySecond (x, y){
 return x - y;
 }
 console.log(mySecond(9, 5))
-/**Q3 ● Define a function called myThird that takes a parameter and prints the parameter on the console. But, it uses mySecond function to print the parameter on the console.*/
+/**Q3 ● Define a function called myThird that takes a parameter and prints the parameter on the console. But, it uses mySecond function to print the parameter on the console.Remember, this question is here to explain the concept of function delegation in JavaScript.*/
 function myThird (k, p){
     return mySecond(k, p) * 6;
 }
 console.log(myThird(6, 2))
-/**● Write a function named myFourth that takes an array as a parameter and prints only the first value of the array on the console. Remember, this question is here to explain the concept of function delegation in JavaScript. */
+/**● Write a function named myFourth that takes an array as a parameter and prints only the first value of the array on the console. */
 
 function myFourth (x){
    var t = [x];
@@ -27,11 +27,11 @@ function myFourth (x){
 console.log(myFourth(5,2,2));
 /** ● Write a function named myFifth that takes an array with two numbers in it as a parameter and prints the sum of the two numbers on console*/
 function myFifth (c){
-    
-    console.log( c[0] + c[3]);
+    if(c[2])
+    console.log( c[0] + c[1]);
 
 }
-myFifth([1,3,5,8,6,7])
+myFifth([1,3,4])
 /**Q6 ● Write a function that takes an integer minutes and converts it to seconds.*/
 function convert(m){
 
@@ -298,7 +298,7 @@ console.log(first10())
     
 //     console.log(output);
 // }
-// var output = [];
+// var output = [1,2,3];
 
 
 // function fizzBuzz(){
