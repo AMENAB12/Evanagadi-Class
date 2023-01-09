@@ -2,67 +2,67 @@
 /**Q1 - Define a simple function named myFirst that prints the word "Hello" on the console.
 ○ First define the function
 ○ Then call the function*/
-function myFirst (){
-    console.log("hello")
-}
-myFirst();
+// function myFirst (){
+//     console.log("hello")
+// }
+// myFirst();
 /**Q2 - Define a function called mySecond that takes a parameter and prints the parameter on console
 ○ Feel free to give any value as a parameter in your function.*/
-function mySecond (x, y){
-return x - y;
-}
-console.log(mySecond(9, 5))
+// function mySecond (x, y){
+// return x - y;
+// }
+// console.log(mySecond(9, 5))
 /**Q3 ● Define a function called myThird that takes a parameter and prints the parameter on the console. But, it uses mySecond function to print the parameter on the console.Remember, this question is here to explain the concept of function delegation in JavaScript.*/
-function myThird (k, p){
-    return mySecond(k, p) * 6;
-}
-console.log(myThird(6, 2))
+// function myThird (k, p){
+//     return mySecond(k, p) * 6;
+// }
+// console.log(myThird(6, 2))
 /**● Write a function named myFourth that takes an array as a parameter and prints only the first value of the array on the console. */
 
-function myFourth (x){
-   var t = [x];
-//    x +1;
-    return t[0];
-}
-console.log(myFourth(5,2,2));
+// function myFourth (x){
+//    var t = [x];
+// //    x +1;
+//     return t[0];
+// }
+// console.log(myFourth(5,2,2));
 /** ● Write a function named myFifth that takes an array with two numbers in it as a parameter and prints the sum of the two numbers on console*/
-function myFifth (c){
-    if(c[2])
-    console.log( c[0] + c[1]);
+// function myFifth (c){
+//     if(c[2])
+//     console.log( c[0] + c[1]);
 
-}
-myFifth([1,3,4])
+// }
+// myFifth([1,3,4])
 /**Q6 ● Write a function that takes an integer minutes and converts it to seconds.*/
-function convert(m){
+// function convert(m){
 
-return m * 60;
-}
-console.log(convert(5))
+// return m * 60;
+// }
+// console.log(convert(5))
 /**Q7 ● Create a function that takes a number as a parameter, increments the number by +1 and returns the result.*/
-function addition(num){
-    return num +1;
+// function addition(num){
+//     return num +1;
 
-}
-console.log(addition(5))
+// }
+// console.log(addition(5))
 /**Q8 ● Write a function that takes the base and height of a triangle and returns its area.*/
 //A = 1/2bh
-function area(b, h){ 
-return 1/2 * (b * h);
-} 
-console.log(area(5, 4))
-/**Q9  */
-function animal(ch, c, p,){
+// function area(b, h){ 
+// return 1/2 * (b * h);
+// } 
+// console.log(area(5, 4))
+// /**Q9  */
+// function animal(ch, c, p,){
 
-return (ch*2 + c*4 + p*4);
-}
-console.log(animal(5, 7, 9))
+// return (ch*2 + c*4 + p*4);
+// }
+// console.log(animal(5, 7, 9))
 /**Q10 -Create a function that takes an array containing only TWO numbers as a parameter and returns a value that is 3 times the first element of the array*/  //what about the rest ?
-function times3(x,y){
- let times3 = [x, y]
+// function times3(x,y){
+//  let times3 = [x, y]
 
-return 3*times3[0,1]
-}
-console.log(times3(5, 4),times3(2,5))
+// return 3*times3[0,1]
+// }
+// console.log(times3(5, 4),times3(2,5))
 /** Or */
 // function times3(num1, num2){
 
@@ -79,20 +79,20 @@ console.log(times3(5, 4),times3(2,5))
 /**Q11- Create a function that returns true when num1 is equal to  num2 otherwise return false.
  */
 
-function trueFalse(num1,num2){
-if(isNaN(num1) && isNaN(num2)){
-    return "Please use only number value"
-}
+// function trueFalse(num1,num2){
+// if(isNaN(num1) && isNaN(num2)){
+//     return "Please use only number value"
+// }
 
-    if(num1 == num2)
-    {
-return "True";
-    } else {
-        return "False"
-    }
+//     if(num1 == num2)
+//     {
+// return "True";
+//     } else {
+//         return "False"
+//     }
 
-}
-console.log(trueFalse(4,7))
+// }
+// console.log(trueFalse(4,7))
 /**Q12 - Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false. */
         /** Pseudo Code
          * declare function divisible(num)
@@ -104,18 +104,18 @@ console.log(trueFalse(4,7))
          * console.log(divisible())
         */
 /** Code */
-function divisible(num){
-    if(isNaN(num)){
-        return "Please use only number value";
+// function divisible(num){
+//     if(isNaN(num)){
+//         return "Please use only number value";
     
-    }
-    if(num % 100 === 0){
-        return "True";
-    } else {
-        return "False";
-    }
-}
-console.log(divisible("100"));
+//     }
+//     if(num % 100 === 0){
+//         return "True";
+//     } else {
+//         return "False";
+//     }
+// }
+// console.log(divisible("100"));
 /**Q13 - Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers */
   /** Pseudo Code
    * declare function oddEven(num)
@@ -129,17 +129,17 @@ console.log(divisible("100"));
    * console.log(oddEven())
    */
 /**Code */
-function oddEven(num){
-    if(isNaN(num)){
-        return "please use number value only";
-    }
-    if(num % 2 == 0){
-        return "It is an Even number";
-    } else if (num % 2 != 0){
-        return "It is an Odd number";
-    }
-}
-console.log(oddEven());
+// function oddEven(num){
+//     if(isNaN(num)){
+//         return "please use number value only";
+//     }
+//     if(num % 2 == 0){
+//         return "It is an Even number";
+//     } else if (num % 2 != 0){
+//         return "It is an Odd number";
+//     }
+// }
+// console.log(oddEven());
 /**Q14 - Create a function that returns
 ○ “Invalid score” if score is above 100 or score is a negative number
 ○ “Grade A” when score is between 90 and 100 (both 90 and 100 included)
@@ -161,24 +161,24 @@ console.log(oddEven());
  * console.log(studentScore())
 */
 /**Code */
-function studentScore(score){
-if(isNaN(score)){
-    return "please use only number value";
-}
-if(score > 100 || score < 0){
-    return "Invalide"
-}
-else if (90 <= score && score <= 100){
-    return "Grade A" 
-}
-else if(80 <= score && score <= 89){
-    return "Grade B"  
-}
-else {
-    return "Grade C"  
-}
-}
-console.log(studentScore())
+// function studentScore(score){
+// if(isNaN(score)){
+//     return "please use only number value";
+// }
+// if(score > 100 || score < 0){
+//     return "Invalide"
+// }
+// else if (90 <= score && score <= 100){
+//     return "Grade A" 
+// }
+// else if(80 <= score && score <= 89){
+//     return "Grade B"  
+// }
+// else {
+//     return "Grade C"  
+// }
+// }
+// console.log(studentScore())
 
 
 /** Decision loop and object oriented programing:
@@ -195,19 +195,27 @@ console.log(studentScore())
  * console.log(first10())
  */
 /**Code  */
-function first10(){
+// function first10(){
 
-    for(var i = 1; i <= 10; i++){
-    console.log(i)
+//     for(var i = 1; i <= 10; i++){
+//     console.log(i)
     
+//     }
+// }
+// first10()
+/**Question 2
+● Write a function that takes a single number as an argument and prints the next 5 numbers in the console. Note: each output should be displayed on a new line.*/
+/** Pseudo code
+ * declare function printNum(num)
+ * check 
+ * 
+ */
+function printNum(num) {
+    for (var i = num + 1; i <= num + 5; i++) {
+      console.log(i);
     }
-}
-console.log(first10())
-
-
-
-
-
+  }
+  printNum(5); 
 
 
 
@@ -349,4 +357,43 @@ console.log(first10())
     //     }
     //     alert(whosPaying())
     //     typeof("12")
-        
+
+
+    
+        /**Abe Q*/
+      /**  create a function that tells us how many days, weeks and months we have left we live until 90 years old it will take your age as the input and console.logs a message with our time left in this format: You have x days, y weeks, and z months left.
+ where x , y and z are replaced with the actual calculated numbers. For this challenge, assume there are 365 days in a year , 52 weeks in a year and 12months in a year.*/
+
+ /** pseudo code */
+ //declare function lifeInWeeks(age)
+ /** check if (isNaN(age)) 
+  * return "Please enter only number value"
+  * if(age < 0)
+  * return "Please give me +ve interger"
+  * general formulas
+  * leftAge = 90 - age
+  * months = leftAge * 12
+  * weeks = leftAge * 52
+  * days = leftAge * 365
+  * 
+  * return months, weeks, days
+  * 
+ */
+/**code */
+function lifeInWeeks(age){
+    if (isNaN(age)){
+        return "Please enter only number value"
+    }
+    if(age < 0){
+        return "Please give me +ve interger" 
+    }
+
+    leftAge = 90 - age;
+    months = leftAge * 12;
+    weeks = leftAge * 52;
+    days = leftAge * 365;
+
+    return ("You have " + months + ":months,\n " +  weeks + ":weeks,\n " +  days + ":days left")
+
+}
+console.log(lifeInWeeks())
