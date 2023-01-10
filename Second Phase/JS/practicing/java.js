@@ -200,39 +200,39 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 //     console.log(output);
 // }
 /**OOP */
-// var a = [1,"asda", 25];
-// console.log(a)
-// console.log(a[2])
-// var o = {
-//     meleya1: 1,
-//     meleya2: "asda",
-//     meleya3: 25,
-// }
-// console.log(o)
+var a = [1,"asda", 25];
+console.log(a)
+console.log(a[2])
+var o = {
+    meleya1: 1,
+    meleya2: "asda",
+    meleya3: 25,
+}
+console.log(o)
 
-// console.log(o["meleya1"])
-// let abebe = {
-//     fn: "abebe",
-//     ls: "kebede",
+console.log(o["meleya1"])
+let abebe = {
+    fn: "abebe",
+    ls: "kebede",
 
-//     xx: function(){
-//         console.log("abebe meta debrot hede")
-//     }
-// };
-// console.log(abebe)
-// console.log(abebe.ls)
+    xx: function(){
+        console.log("abebe meta debrot hede")
+    }
+};
+console.log(abebe)
+console.log(abebe.ls)
 
-// abebe.xx();
+abebe.xx();
 
-// let kebede = {
-// fn: "kebede",
-// ln: "abebe",
+let kebede = {
+fn: "kebede",
+ln: "abebe",
 
-// fulname: function (){
-//     return this.fn + " " + this.ls;
-// }
+fulname: function (){
+    return this.fn + " " + this.ls;
+}
 
-// };
+};
 
 /**constructor function */
 // let abebe = {
@@ -299,3 +299,17 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 //     return (w * 3) + (d * 1) + (l * 0);
 // }
 // console.log(pointCal(16,5,5));
+// function printNumbers() {
+//   let i = 1;
+//   while (i <= 10) {
+//     console.log(i);
+//     i++;
+//   }
+// }
+//  printNumbers();
+let i =0
+do{
+console.log(i)
+  i++;
+}
+while(i <= 10);
