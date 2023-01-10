@@ -210,21 +210,75 @@
  * check 
  * 
  */
-function printNum(num) {
-    for (var i = num + 1; i <= num + 5; i++) {
-      console.log(i);
+// function printNum(num) {
+//     for (var i = num + 1; i <= num + 5; i++) {
+//       console.log(i);
+//     }
+//   }
+//   printNum(5); 
+  /***Q3 
+   * Write a function that takes a single number and prints the sum of the next 10 numbers after the given number */
+//   function addupp(number){
+//     let sum = 0;
+
+//     for (var i = number + 1; i <= number + 10; i++){
+//         sum += i;
+        
+//     }
+//     return sum;
+//   }
+  
+// console.log(addupp(1)) 
+/**Q4
+ * Write a function that takes an array as an argument and prints every element of the array on the console */
+function myArr(num){
+    for (let i = 0; i < myArr.length; i++){
+        console.log(num[i]);
     }
-  }
-  printNum(5); 
+}
+myArr([1,3,5])
 
+/**Question 6
+● Write a function that takes an array of numbers as a parameter and logs in the console the sum of all the numbers in the array.*/
+function sumOfarray(arr){
+    let sum = 0;
 
-
-
-
-
-
-
-
+    for (let i = 0;i < arr.length; i++){
+        sum = sum + arr[i]
+    }
+    return sum;
+}
+console.log(sumOfarray([1,8]))
+/**Question 7
+● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all odd numbers of the array from the total sum of all even numbers and logs the result in the console */
+function oddEvenDiff(arr2){
+    let oddSum = 0;
+    let evenSum = 0;
+    for (let i = 0; i < arr2.length; i++){
+        if(arr2[i] % 2 === 0){
+            evenSum = evenSum + arr2[i]
+        } else {
+            oddSum = oddSum + arr2[i]
+        }
+    } 
+    return evenSum - oddSum
+}
+console.log(oddEvenDiff([1,5,8,2]))
+console.log(oddEvenDiff([0,3]))
+/**Question 8
+● Write a function that takes an array as a parameter and logs in the console the elements that have even indexes only. Notice: this question is not asking you to log elements with even value, but elements that are located on even indexes) */
+function oddEvenDiff1(arr3){
+    let oddSum = 0;
+    let evenSum = 0;
+    for (let i = 0; i < arr3.length; i+=2){
+        if([i] % 2 === 0){
+            console.log(arr3[i])
+    } 
+    
+}
+}
+console.log("even index")
+oddEvenDiff1([1,5,8,2,0,9,7,4,2])
 
 
 
