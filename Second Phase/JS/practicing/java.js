@@ -200,39 +200,66 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 //     console.log(output);
 // }
 /**OOP */
-var a = [1,"asda", 25];
-console.log(a)
-console.log(a[2])
-var o = {
-    meleya1: 1,
-    meleya2: "asda",
-    meleya3: 25,
-}
-console.log(o)
+// var a = [1,"asda", 25];
+// console.log(a)
+// console.log(a[2])
+// var o = {
+//     meleya1: 1,
+//     meleya2: "asda",
+//     meleya3: 25,
+// }
+// console.log(o)
 
-console.log(o["meleya1"])
-let abebe = {
-    fn: "abebe",
-    ls: "kebede",
+// console.log(o["meleya1"])
+// let abebe = {
+//     fn: "abebe",
+//     ls: "kebede",
 
-    xx: function(){
-        console.log("abebe meta debrot hede")
-    }
-};
-console.log(abebe)
-console.log(abebe.ls)
+//     xx: function(){
+//         console.log("abebe meta debrot hede")
+//     }
+// };
+// console.log(abebe)
+// console.log(abebe.ls)
 
-abebe.xx();
+// abebe.xx();
 
-let kebede = {
-fn: "kebede",
-ln: "abebe",
+// let kebede = {
+// fn: "kebede",
+// ln: "abebe",
 
-fulname: function (){
-    return this.fn + " " + this.ls;
-}
+// fulname: function (){
+//     return this.fn + " " + this.ls;
+// }
 
-};
+// };
+
+// let employee = {
+//     firstName: "abenezer",
+//     lastName: "megersa",
+//     age: 22,
+
+//     fulInfo: function () {
+//         return "reverse name is " + this.lastName +" "+this.firstName;
+//     },
+//     selambel: function(){
+//         return "Hello World";
+//     },
+
+// };
+// console.log(employee);
+
+// employee.firstName = "fdfhdf"
+// console.log(employee.fulInfo());
+
+  
+
+
+
+
+
+
+
 
 /**constructor function */
 // let abebe = {
@@ -264,23 +291,23 @@ fulname: function (){
 // };
 // var chala = new student ("tola", "chala")
 // console.log(chala)
-/** Algorithm Thinking */
-// function detectWord(a){
+       /** Algorithm Thinking */
+function detectWord(a){
 
-//     var hidden = "";
+    var hidden = "";
 
-//     for (i = 0; i <= a.length; i++){
-//     var singleLetter = a.charAt(i)
-// if (singleLetter == singleLetter.toLowerCase()){
-// hidden = hidden + singleLetter;
-// }
+    for (i = 0; i <= a.length; i++){
+    var singleLetter = a.charAt(i)
+if (singleLetter == singleLetter.toLowerCase()){
+hidden = hidden + singleLetter;
+}
 
-//     };
+    };
 
-//     return hidden;
-// }
-// var hidden = detectWord("UDGJKcLKHIYaOIYLVt");
-// console.log(typeof 5)
+    return hidden;
+}
+var hidden = detectWord("UDGJKcLKHIYaOIYLVt");
+console.log(typeof 5)
 // /** Tri Area */
 // function triArea (b, h){
 //     if (isNaN(b) || isNaN(h)){
@@ -307,9 +334,9 @@ fulname: function (){
 //   }
 // }
 //  printNumbers();
-let i =0
-do{
-console.log(i)
-  i++;
-}
-while(i <= 10);
+// let i =0
+// do{
+// console.log(i)
+//   i++;
+// }
+// while(i <= 10);

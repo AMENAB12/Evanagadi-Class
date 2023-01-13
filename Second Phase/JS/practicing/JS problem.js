@@ -279,25 +279,130 @@ function oddEvenDiff1(arr3){
 }
 console.log("even index")
 oddEvenDiff1([1,5,8,2,0,9,7,4,2])
+/**Question 9
+Write a function that takes the sampleArray as a parameter, removes the last element from the array, adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method */
+      /**pseudo Code
+ * declara globa scope var sampleArray; 
+ * declare function removelast()
+ * check if typof array
+ * 
+ * 
+ * 
+ * use methodes .pop & . push
+ * 
+ * console.log (sampleArray)
+*/
 
 
+let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+function removeLast() {
+    
+    // sampleArray.pop();
+    // sampleArray.shift();
+    // sampleArray.push('32');
+    // sampleArray.unshift('32');
+    sampleArray.splice()
+    console.log(sampleArray);
+}
+removeLast()
 
+/**Question 10
+● Write a function that takes the sampleArray as an argument, sorts the array in ascending order and prints the sorted array on the console */
+     /**Pseudo Code
+      * 
+      */
 
+     function sorts() {
+         sampleArray.sort((a,b) => a - b);
+         console.log(sampleArray);
+     }
+     sorts()
+     /** Questions on JavaScript objects */
+     let evangadiClass = {
+        lengthOfCourse: "1 Month",
+        website: "https://www.evangadi.com/",
+        isChallenging: false,
+        topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+        students: [
+        {
+        name: "Abebe",
+        age: 34,
+        sex: "M"
+        },
+        {
+        name: "Kebede",
+        age: 44,
+        sex: "M"
+        },
+        {
+        name: "Almaz",
+        age: 27,
+        sex: "F"
+        },
+        {
+        name: "Challa",
+        age: 22,
+        sex: "M"
+        },
+        {
+        name: "Chaltu",
+        age: 19,
+        sex: "F"
+        }
+        ]
+        }
 
+/**Question 11
+● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the console */
 
+function changeLengthOfCourse(){
+    console.log(evangadiClass.lengthOfCourse = "5 Months")
+}
+changeLengthOfCourse()
+console.log(evangadiClass)
 
+/**Question 12
+● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the console */
 
+function changeTopicsCovered(){
+     console.log(evangadiClass.topicsCovered.push("Bootstrap"))
+    // console.log(evangadiClass.topicsCovered.splice(5,1,"Bootstrap"))
+}
+changeTopicsCovered()
+// console.log(evangadiClass)
 
+/**Question 13
+● Write a function that takes the "evangadiClass" object as an argument and calculates the average age of the class. Print the result on the console */
+function average(){
 
+let student = evangadiClass.students
+console.log(student)
 
+console.log(student[0].age)
+    total = 0;
+    for(i = 0; i < student.length; i++){
+        total = total + student[i].age;
+    }
+console.log(total)
 
-
-
-
-
-
-
-
+    return total / student.length;
+}
+console.log(average())
+/**Question 14
+● Write a function that takes the"evangadiClass" object as an argument and calculates the percentage of male students in the class. Print the result on the console */
+function malePercentage(){
+    let maleStudent = 0;
+    let numStudents = evangadiClass.students.length;
+    for (let i = 0; i < numStudents; i++){
+        if (evangadiClass.students[i].sex === "M"){
+            maleStudent++;
+        }
+        
+        
+    }
+    return (maleStudent / numStudents) * 100 + "%";
+}
+console.log(malePercentage())
 
 
 
