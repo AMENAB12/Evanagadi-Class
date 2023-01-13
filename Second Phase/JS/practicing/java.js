@@ -294,12 +294,14 @@ bmi should equal 20 when it's rounded to the nearest whole number.
        /** Algorithm Thinking */
 function detectWord(a){
 
-    var hidden = "";
+    let hidden = "";
 
     for (i = 0; i <= a.length; i++){
-    var singleLetter = a.charAt(i)
+    let singleLetter = a.charAt(i)
 if (singleLetter == singleLetter.toLowerCase()){
 hidden = hidden + singleLetter;
+} else {
+
 }
 
     };
@@ -307,7 +309,9 @@ hidden = hidden + singleLetter;
     return hidden;
 }
 var hidden = detectWord("UDGJKcLKHIYaOIYLVt");
-console.log(typeof 5)
+ console.log(hidden)
+
+ 
 // /** Tri Area */
 // function triArea (b, h){
 //     if (isNaN(b) || isNaN(h)){
