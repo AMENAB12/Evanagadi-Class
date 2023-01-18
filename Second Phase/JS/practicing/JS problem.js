@@ -404,8 +404,93 @@ function malePercentage(){
 }
 console.log(malePercentage())
 
+/** Advanced JavaScript Algorithms - practice exercise
+   */
+  /** Question 1 Given an array of numbers, write a function that prints in the console another array
+which contains all the even numbers in the original array, which also have even indexes only */
+
+function allEven(arr){
+    let newArray = [];
+    for (i = 0; i < arr.length; i = i + 2){
+        if(arr[i] % 2 === 0){
+            newArray.push(arr[i]);
+
+        }
+    }
+    return newArray;
+}
+console.log(allEven([1,5]))
+/** Question 2
+● Create a function that takes a two-digit number as an parameter and prints "Ok" in the console if the given string is greater than its reversed digit version. If not, the function will print "Not ok" */
+
+function rev (num){
+    if (num <= 10 || num >= 99)
+    return ("please use 2 digite");
+
+    let rev = parseInt
+    (num.toString().split("").reverse().join(""))
+
+    if (num > rev){
+        return ("ok")
+    } else 
+    ("not okay")
+}
+console.log(rev(44))
 
 
+/**Question 3
+● Write a function that takes a positive integer and returns the factorial of the number.
+Notes: The factorial of 0 is 1. Ex: factorial seven is : 1 × 2 × 3 × 4 × 5 × 6 × 7. The
+factorial of any positive integer x is x * (x - 1) * (x - 2) * . . . . . . * 1 (ex: factorial of 4 is
+4 * 3 * 2 * 1 = 24) */
+function fact(num){
+    if (num <= 1){
+
+        return 2;
+
+    } 
+    return num * fact(num - 1)
+}
+console.log(fact(4))
+
+
+//fact** 1 = 1
+
+//fact 2** 2 * fact 1 = 2
+
+//fact 3*** 3 * fact 2 = 6
+
+//fact 4 ** 4 * fact 3 = 24
+/** Question 4 (Meera array)
+● A Meera array is defined to be an array containing only numbers as its elements and for
+all n values in the array, the value n*2 is not in the array. So [3, 5, -2] is a Meera array
+because 3*2, 5*2 or 2*2 are not in the array. But [8, 3, 4] is not a Meera array because
+2*4=8 and both 4 and 8 are elements found in the array. Write a function that takes an
+array of numbered elements and prints “I am a Meera array” in the console if its array
+does NOT contain n and also n*2 as value. Otherwise, the function prints “I am NOT a
+Meera array” */
+
+function isMeeraArray(arr){
+    //Meera = 0;
+
+    for (i = 0; i < arr.length; i++){
+        console.log(i)
+        if(isNaN(arr[i])){
+            return "give me number";
+        }
+        if (arr.includes(arr[i] * 2) ){
+            // Meera = Meera + arr[i];     
+            return "I am NOT a Meera array";
+        } 
+        
+        
+    }
+    return "I am a Meera array";
+
+}       
+console.log(isMeeraArray([3, 5]))
+   console.log(isMeeraArray([8, 3, 4])) /
+   console.log(isMeeraArray([8, 3, 'g'])) 
 
 
 
@@ -555,4 +640,4 @@ function lifeInWeeks(age){
     return ("You have " + months + ":months,\n " +  weeks + ":weeks,\n " +  days + ":days left")
 
 }
-console.log(lifeInWeeks())
+console.log(lifeInWeeks(1))

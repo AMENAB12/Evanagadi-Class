@@ -311,7 +311,40 @@ hidden = hidden + singleLetter;
 var hidden = detectWord("UDGJKcLKHIYaOIYLVt");
  console.log(hidden)
 
- 
+ //Magic Array
+
+function magicArray(a){
+    var sum = 0;
+
+    for (i = 0; i < a.length;i++){
+        var  num = a[i];
+        if(num == 2){
+            sum = sum + num;
+        }
+        if (num > 2){
+            for(j = 2; j < (num/2 + 1); j++){
+                if(num % j == 0){
+                    //sum = sum + num;
+                }
+            }
+        }
+    } 
+    if(a[0] == sum){
+
+        return 1;
+    }
+       
+
+    
+}
+
+
+
+
+
+
+
+
 // /** Tri Area */
 // function triArea (b, h){
 //     if (isNaN(b) || isNaN(h)){
