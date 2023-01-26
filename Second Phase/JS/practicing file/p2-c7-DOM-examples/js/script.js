@@ -6,8 +6,8 @@
 
 // // Selecting an individual element
 // // Using getElementById()
-// var el = document.getElementById("two");
-// console.log(el);
+ var el = document.getElementById("two");
+ console.log(el);
 // el.className = "red";
 // el.style.backgroundColor = "pink";
 
