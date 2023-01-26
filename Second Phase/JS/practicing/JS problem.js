@@ -493,6 +493,86 @@ console.log(isMeeraArray([3, 5]))
    console.log(isMeeraArray([8, 3, 'g'])) 
 
 
+   /**Question 5 (Dual array)
+● Define a Dual array to be an array where every value occurs exactly twice. For example,
+{1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5
+occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two
+times) Write a function named isDual that returns 1 if its array argument is a Dual array.
+Otherwise it returns 0. */
+
+function isDual(arr){
+ 
+}
+
+
+
+61201 - 60
+
+
+
+/**Question 6
+● Write a function that takes the number of seconds and returns the digital format clock time as a string. Time should be counted from 00:00:00.
+○ Examples: digitalClock(5025) as "01:23:45" 5025 seconds is 1 hour, 23 mins, 45
+secs. */
+
+// function digitalClock(secs){
+//     let hours = Math.floor(secs / 3600);
+//     let mins = Math.floor((secs - hours * 3600) / 60);
+//     let sec = secs - hours * 3600 - mins * 60;
+//     if (hours < 10){
+//         hours = "0" + hours;
+//     } else if (mins < 10){
+//         mins = "0" + mins;
+//     } else if (sec < 10){
+//         sec = "0" + (sec - 60);
+//         // if (sec >= 60){
+//         //     sec = "0" + (sec - 60);
+
+//         // } 
+//     }return hours + ":" + mins + ":" + sec;
+// }
+// console.log(digitalClock(61201))
+
+var toHHMMSS = (secs) => {
+    var sec_num = parseInt(secs, 10)
+    var hours   = Math.floor(sec_num / 3600)
+    var minutes = Math.floor(sec_num / 60) % 60
+    var seconds = sec_num % 60
+
+    return [hours,minutes,seconds]
+        .map(v => v < 10 ? "0" + v : v)
+        .filter((v,i) => v !== "00" || i > 0)
+        .join(":")
+}
+console.log(toHHMMSS(87000))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -624,20 +704,21 @@ console.log(isMeeraArray([3, 5]))
   * 
  */
 /**code */
-function lifeInWeeks(age){
-    if (isNaN(age)){
-        return "Please enter only number value"
-    }
-    if(age < 0){
-        return "Please give me +ve interger" 
-    }
+// function lifeInWeeks(age){
+//     if (isNaN(age)){
+//         return "Please enter only number value"
+//     }
+//     if(age < 0){
+//         return "Please give me +ve interger" 
+//     }
 
-    leftAge = 90 - age;
-    months = leftAge * 12;
-    weeks = leftAge * 52;
-    days = leftAge * 365;
+//     leftAge = 90 - age;
+//     months = leftAge * 12;
+//     weeks = leftAge * 52;
+//     days = leftAge * 365;
 
-    return ("You have " + months + ":months,\n " +  weeks + ":weeks,\n " +  days + ":days left")
+//     return ("You have " + months + ":months,\n " +  weeks + ":weeks,\n " +  days + ":days left")
 
-}
-console.log(lifeInWeeks(1))
+// }
+// console.log(lifeInWeeks(1))
+// how do i center div
