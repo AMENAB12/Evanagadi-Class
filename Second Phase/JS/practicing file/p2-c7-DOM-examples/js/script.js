@@ -6,19 +6,19 @@
 
 // // Selecting an individual element
 // // Using getElementById()
- var el = document.getElementById("two");
- console.log(el);
- el.className = "red";
+ //var el = document.getElementById("two");
+ //console.log(el);
+ //el.className = "red";
 // el.style.backgroundColor = "pink";
 
 // Once you select the element, you can do a whole lot of things to the specific element. For now, lets change the class name using the className property
 // 	el.className = "pink";
 
 // // Using querySelector()
- var el = document.querySelector("#one");
-var el = document.querySelector(".yellow");
- console.log(el);
- el.className = "pink";
+ //var el = document.querySelector("#one");
+//var el = document.querySelector(".yellow");
+ //console.log(el);
+ //el.className = "lemonChalk";
 
 // // Selecting multiple elements
 // // Using getElementByClass()
@@ -26,10 +26,10 @@ var el = document.querySelector(".yellow");
 // console.log(el);
 // // el[0].className = "pink";
 
-// // Using getElementsByTagName()
+//Using getElementsByTagName()
 // var el = document.getElementsByTagName("li");
 // console.log(el);
-// // el[4].className = "pink";
+// el[0].className = "pink";
 
 // // Using querySelectorAll()
 // var el = document.querySelectorAll(".yellow");
@@ -71,17 +71,17 @@ var el = document.querySelector(".yellow");
 // // DOM Implementation Inconsistency
 // // Notice how treating HTMLCollection exactly like an array could sometimes lead to unexpected result
 
-// // Using getElementByClass()
-// var el2 = document.getElementsByClassName("yellow");
-// console.log(el2);
-// el2[0].className = "pink";
-// el2[1].className = "pink";
+// Using getElementByClass()
+var el2 = document.getElementsByClassName("yellow");
+console.log(el2);
+el2[0].className = "pink";
+el2[1].className = "blue";
 
 // // Using getElementsByTagName()
 // var el3 = document.getElementsByTagName("li");
 // console.log(el3);
 // el3[0].className = "pink";
-// el3[1].className = "pink";
+// el3[1].className = "blue";
 
 // // Or using this for loop on the collection
 
