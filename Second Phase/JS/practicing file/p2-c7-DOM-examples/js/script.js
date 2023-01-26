@@ -8,17 +8,17 @@
 // // Using getElementById()
  var el = document.getElementById("two");
  console.log(el);
-// el.className = "red";
+ el.className = "red";
 // el.style.backgroundColor = "pink";
 
 // Once you select the element, you can do a whole lot of things to the specific element. For now, lets change the class name using the className property
 // 	el.className = "pink";
 
 // // Using querySelector()
-// // var el = document.querySelector("#one");
-// var el = document.querySelector(".yellow");
-// console.log(el);
-// el.className = "pink";
+ var el = document.querySelector("#one");
+var el = document.querySelector(".yellow");
+ console.log(el);
+ el.className = "pink";
 
 // // Selecting multiple elements
 // // Using getElementByClass()
