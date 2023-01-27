@@ -72,11 +72,11 @@
 // // Notice how treating HTMLCollection exactly like an array could sometimes lead to unexpected result
 
 // Using getElementByClass()
-var el2 = document.getElementsByClassName("yellow");
-console.log(el2);
-el2[0].className = "pink";
-el2[1].className = "blue";
-
+// var el2 = document.getElementsByClassName("yellow");
+// console.log(el2);
+// el2[0].className = "pink";
+//el2[1].className = "blue";
+ 
 // // Using getElementsByTagName()
 // var el3 = document.getElementsByTagName("li");
 // console.log(el3);
@@ -85,7 +85,7 @@ el2[1].className = "blue";
 
 // // Or using this for loop on the collection
 
-// var el = document.getElementsByClassName("yellow");
+//  var el = document.getElementsByClassName("yellow");
 // console.log(el);
 // for (var i = 0; i < el.length; i = i + 1) {
 //   var selectedItem = el[i];
@@ -120,16 +120,15 @@ el2[1].className = "blue";
 // Using parentNode
 // var el = document.getElementById("three");
 // console.log(el);
-// var parentElement = el.parentNode;
-// console.log(parentElement);
+
 // parentElement.className = "pink";
 // Using previousElementSibling
 // var el = document.getElementById("three");
 // console.log(el);
 // var previousSiblingItem = el.previousElementSibling;
 // console.log(previousSiblingItem);
-// previousSiblingItem.className = "pink";
-
+//previousSiblingItem.className = "blue";
+// console.log(document.querySelectorAll('.red:nth-child(1)'))
 // Using nextElementSibling
 // var el = document.getElementById("three");
 // console.log(el);
@@ -152,9 +151,9 @@ el2[1].className = "blue";
 // lChild.className = "pink";
 
 // // Changing node value
-// // Using textContent
+// Using textContent
 // let el = document.getElementById("two");
-// console.log(el);
+// // console.log(el);
 // let nValue = el.textContent;
 // console.log(nValue);
 // el.className = "pink";
@@ -166,12 +165,16 @@ el2[1].className = "blue";
 // el.firstChild.nodeValue = "Some Fruit";
 
 // // Creating an HTML element using JavaScript
-// var someParagraph = document.createElement("p");
+// var someParagraph = document.createElement("h1");
 // console.log(someParagraph);
 // someParagraph.textContent = "Some sample";
-// // console.log(someParagraph);
+// console.log(someParagraph);
 // document.body.appendChild(someParagraph);
-// document.body.removeChild(someParagraph);
+let two = document.getElementsByClassName("Kelele")
+let th = document.getElementById("#two")
+
+ document.removeChild("th");
+
 
 // var someli = document.createElement("li");
 // // console.log(someli);
@@ -179,7 +182,7 @@ el2[1].className = "blue";
 // // console.log(someParagraph);
 // var parent = document.getElementById("listOfFruits");
 // parent.appendChild(someli).className = "pink";
-
+ 
 // // Working with attributes
 // var el = document.querySelector("ul");
 // console.log(el);
@@ -191,12 +194,12 @@ el2[1].className = "blue";
 // var el = document.getElementById("three");
 // el.className = "hamrawi";
 // Inline styling
-var el = document.querySelector("h1");
-el.style.backgroundColor = "blue";
-el.style.color = "white";
-el.style.padding = "10px";
-el.style.borderBottom = "2px solid black";
-// console.log(el);
+// var el = document.querySelector("h1");
+// el.style.backgroundColor = "blue";
+// el.style.color = "white";
+// el.style.padding = "10px";
+// el.style.borderBottom = "2px solid black";
+// // console.log(el);
 
 // var liElem = document.createElement("li");
 // var liElem2 = document.createElement("li");
