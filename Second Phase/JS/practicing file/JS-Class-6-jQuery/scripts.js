@@ -67,8 +67,9 @@ $( document ).ready(function() {
 		// console.log(el);
 
 		// // // :contains("text")
-		// var el = $("ul:contains(Apple)");
-		// console.log(el);
+		// var el = $("#one");
+		// console.log(el.text());
+		// el.remove();
 
 	// 	// // empty
 	// 	var el = $("li:empty");
@@ -141,8 +142,8 @@ $( document ).ready(function() {
 	// Attributes
 		// // addClass() & next()
 		// // Used to add a class(es) to a selected item 
-		// var el = $("li:empty");
-		// // el.addClass("green");
+		// var el = $("#listOfFruits");
+		// el.addClass("green");
 
 		// el.after("<li class=''> Empty Item Below </li>").next().addClass("green");		
 
