@@ -1,8 +1,10 @@
-const abdu = require("./abebe");
-const kebe = require("./kebede");
+// const abdu = require("./abebe");
+// const kebe = require("./kebede");
+
+AAsomeFunction();
 
 // ES6
-import AAvar1, { AAsomeFunction, sum } from "./abebe.js";
+// import AAvar1, { AAsomeFunction, sum } from "./abebe.js";
 
 // const kebe = require("./kebede");
 
@@ -13,7 +15,7 @@ import AAvar1, { AAsomeFunction, sum } from "./abebe.js";
 
 // console.log(abebe);
 
-abe.AAsomeFunction();
-kebe.AAsomeFunction();
+// abe.AAsomeFunction();
+// kebe.AAsomeFunction();
 
-abe.sum(9, 10);
+// abe.sum(9, 10);

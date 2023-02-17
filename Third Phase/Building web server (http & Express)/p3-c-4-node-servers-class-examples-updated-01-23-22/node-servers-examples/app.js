@@ -1,5 +1,7 @@
 // // 1: Creating basic Web Server
 // const http = require("http");
+
+// console.log(http);
 // // Create the Server Object
 // const server = http.createServer();
 // // Call the listen method to tell the server which port to listen to
@@ -9,24 +11,51 @@
 // // That is it!! You have now created a server using Node's http Module
 
 // // 2: Serving simple message using the http module by handling request and response
-// const http = require("http");
+const http = require("http");
+const fs = require("fs");
+const url = require("url");
+
+
+
 // // Create the Server Object
-// const server = http.createServer(function (req, res) {
-//   // Let's send an object that we created by querying the data from the Database. Don't worry about the querying part for now. Just understand that this is what we get from the DB (Lets use the same json object we used to create Apple's iPhone page)
-//   var data = "Some data to be sent"; // We will prepare the actual data object later after we learn about APIs
+const server = http.createServer(function (req, res) {
+  // Let's send an object that we created by querying the data from the Database. Don't worry about the querying part for now. Just understand that this is what we get from the DB (Lets use the same json object we used to create Apple's iPhone page)
+ //var data = "Some data to be sent";  We will prepare the actual data object later after we learn about APIs
 
-//   // Now let's send this data to the browser when request is sent to port 7766
-
-//   // res.setHeader("Access-Control-Allow-Origin", "*");
+//   Now let's send this data to the browser when request is sent to port 7766
+res.end("hello world!");
+console.log("request received");
+//   res.setHeader("Access-Control-Allow-Origin", "*");
 //   res.writeHead(200, { "Content-Type": "text/html" });
-//   // res.writeHead(200);
-//   res.end(data);
-// });
+//   res.writeHead(200);
+
+// console.log(parsedUrl);
+
+const parsedUrl = url.parse(req.url, true);
+
+let filePath = parsedUrl.path;
+console.log(filePath)
+
+if(filePath == "/abebe.html"){
+
+    res.end("Hello There!");
+
+} else {
+    res.write("HEllll");
+    res.end();
+}
+
+
+
+
+
+  
+});
 
 // // Call the listen method to tell the server which port to listen to
-// server.listen(7766, function () {
-//   console.log("Listening to port 7766");
-// });
+server.listen(7766, function () {
+  console.log("Listening to port 7766");
+});
 
 // // 3. Serving static page with http module
 // const http = require("http");

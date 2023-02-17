@@ -1,5 +1,17 @@
-const express = require("express");
+const oS = require("os");
 
+console.log(oS)
+
+const freeMemory = oS.userInfo();
+console.log(freeMemory)
+
+
+const fs = require('fs');
+
+fs.readFile('./anotherFileExample.txt', 'utf-8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
 
 
 // // 1: Getting detail information of a file from the path
@@ -30,17 +42,17 @@ const express = require("express");
 // console.log(freeMemory);
 
 // // 3: Dealing with files
-const fs = require("fs");
-const readFile = fs.readFileSync("example.txt", "utf8");
-console.log(readFile);
+// const fs = require("fs");
+// const readFile = fs.readFileSync("example.txt", "utf8");
+// console.log(readFile);
 
 // fs.writeFileSync("newFile.txt", "Abebe beso bela");
 
 // Remove
-fs.unlink("newFile.txt", (err) => {
-  if (err) throw err;
-  console.log("newFile was deleted");
-});
+// fs.unlink("newFile.txt", (err) => {
+//   if (err) throw err;
+//   console.log("newFile was deleted");
+// });
 
 // // Emitting events
 // const events = require("events");
