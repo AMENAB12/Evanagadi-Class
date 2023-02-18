@@ -1,0 +1,2 @@
+The value of 10 when passed through the myMultiplier function is 20.
+The value of 10 when passed through the myMultiplier function is 20.
