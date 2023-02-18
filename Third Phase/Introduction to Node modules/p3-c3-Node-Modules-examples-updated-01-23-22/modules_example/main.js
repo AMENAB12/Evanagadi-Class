@@ -1,10 +1,12 @@
 // const abdu = require("./abebe");
 // const kebe = require("./kebede");
+// console.log(abdu.sum(9,10))
 
-AAsomeFunction();
-
+// abdu.AAsomeFunction();
+// AAsomeFunction();
+// console.log()
 // ES6
-// import AAvar1, { AAsomeFunction, sum } from "./abebe.js";
+import AAvar1, { AAsomeFunction, sum } from "./abebe.js";
 
 // const kebe = require("./kebede");
 

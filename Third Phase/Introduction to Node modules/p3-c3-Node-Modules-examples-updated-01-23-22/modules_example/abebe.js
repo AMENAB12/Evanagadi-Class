@@ -11,15 +11,16 @@ function sum(a, b) {
   c = a + b;
   console.log(c);
 }
+// console.log(module)
 // // ES6
 // export default AAvar1;
   // export AAsomeFunction;
   // export sum;
 
 // CommonJS
-// module.exports.AAvar1 = AAvar1;
-// module.exports.AAsomeFunction = AAsomeFunction;
-// module.exports.sum = sum;
+module.exports.AAvar1 = BBVar;
+module.exports.AAsomeFunction = AAsomeFunction;
+module.exports.sum = sum;
 // console.log(module);
 
 // (function (exports, require, module, __filename, __dirname) {
