@@ -1,0 +1,11 @@
+{
+  "name": "nodeserverproject",
+  "version": "1.0.0",
+  "description": "Evangadi For Node server questions (HTTP and Express web server building) Exercise",
+  "main": "myWebServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abenezer",
+  "license": "ISC"
+}
