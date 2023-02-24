@@ -9,6 +9,6 @@ return{
 } )();
 
 var result = mySecond.myMultiplier(4);
-console.log(result);
+// console.log(result);
 module.exports = mySecond;
-console.log(mySecond);
+// console.log(mySecond);

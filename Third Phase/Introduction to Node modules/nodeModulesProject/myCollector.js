@@ -28,10 +28,10 @@ const result = firstFunction(inputNumber);
 
 const message = `The value of ${inputNumber} when passed through the myMultiplier function is ${result}.`;
 
-// fs.writeFile('results.txt', message, (err) => {
-//   if (err) throw err;
-//   console.log('The result has been saved to results.txt');
-// });
+fs.writeFile('results.txt', message, (err) => {
+  if (err) throw err;
+  console.log('The result has been saved to results.txt');
+});
 /** B */
 // const { myMultiplier } = require('./mySecond');
 // const mySecond = require('./mySecond');
@@ -41,7 +41,7 @@ const message = `The value of ${inputNumber} when passed through the myMultiplie
 const inputNumbers = 14;
 const results = secondFunction(inputNumbers);
 
-const messages = `The value of ${inputNumber} when passed through the myMultiplier function is ${result}.`;
+const messages = `The value of ${inputNumbers} when passed through the myMultiplier function is ${results}.`;
 
 fs.writeFile('results.txt', message + '\n' + messages, (err) => {
   if (err) throw err;

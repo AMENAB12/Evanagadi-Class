@@ -11,6 +11,7 @@ return{
 } )();
 
 var result = myFirst.myMultiplier(4);
-console.log(result);
+
 module.exports = myFirst;
-console.log(myFirst)
+// console.log(myFirst)
+// console.log(module);
