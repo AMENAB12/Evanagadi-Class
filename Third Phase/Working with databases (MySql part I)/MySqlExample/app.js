@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+  const mysql = require("mysql");
 const express = require("express");
 var cors = require("cors");
 
@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyparser.urlencoded({ extended: true }));
 
 var mysqlConnection = mysql.createConnection({
-  socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock", //path to mysql sock in MAMP
+  // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock", //path to mysql sock in MAMP
   user: "june29thNode",
   password: "june29thNode",
   host: "127.0.0.1",
