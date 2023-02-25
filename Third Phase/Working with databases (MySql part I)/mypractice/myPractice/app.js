@@ -9,7 +9,7 @@ var app = express();
 var mysqlConnection = mysql.createConnection({
     
     user: "oct27",
-    password: "aben",
+    password: "abeni",
     host: "localhost",
     database: "oct27",
   });
