@@ -1,7 +1,14 @@
 const mysql = require('mysql');
 const express = require('express');
+var cors = require("cors");
 
-app = express();
+const bodyparser = require("body-parser");
+
+var app = express();
+app.use(cors());
+
+// Use  body parser as middle ware
+app.use(bodyparser.urlencoded({ extended: true }));
 
 const Connection = mysql.createConnection({
     host: 'localhost',
@@ -77,6 +84,36 @@ const Connection = mysql.createConnection({
     
       res.end(message);
     });
+
+
+
+    app.post("/addproduct", (req, res) => {
+      // console.log(bodyparser.json);
+      console.log(req.body.products);
+      let orderid = req.body.orderID;
+      let productname = req.body.productName;
+      let price = req.body.productPrice;
+      let description = req.body.Discription;
+      let descriptionid = req.body.descriptionID;
+      let Productimg = req.body.productimg;
+      let producturl = req.body.productUrl;
+      let productid = req.body.productID;
+      let username = req.body.userName;
+      let Userpassword = req.body.userpassword;
+      let userid = req.body.userID;
+      let FullDescription = req.body.fullDescription;
+      
+
+      let addedProductId = 0;
+
+  let sqlAddToorders =
+    "INSERT INTO orders (order_id, product_id, user_id) VALUES (${orderid} , ${productid}, ${userid})";
+
+    Connection.query(sqlAddToorders, function (err, result) {
+      if (err) throw err;
+      console.log("1 record inserted");
+    });    
+
+
     
     app.listen(3001, () => console.log("Listening to : 3001"));
-

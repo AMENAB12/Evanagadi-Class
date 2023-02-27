@@ -3,35 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Iphone</title>
+    <title>Add Product</title>
   </head>
 
   <body>
-    <h1>Add iPhone</h1>
-    <form action="http://localhost:3001/addiphones" method="post">
-      <label for="p-Price">product Price:</label><br />
-      <input type="text" name="p-Price" />
+    <h1>Add Product</h1>
+    <form action="http://localhost:3001/addproduct" method="post">
+      <!-- order  -->
+      <label for="orderID">Order ID</label><br />
+      <input type="text" name="orderID" />
       <br /><br />
-      <label for="p-Discription">product Discription:</label><br />
-      <input type="text" name="p-Discription" />
+      
+      
+           <!-- products -->
+      <label for="productName">Product Name:</label><br />
+      <input type="text" name="productName" >
       <br /><br />
-      <label for="order">Order What u want:</label><br />
-      <input type="text" name="order" />
+      <label for="productPrice">product Price:</label><br />
+      <input type="text" name="productPrice" />
       <br /><br />
-      <label for="products">Products</label><br />
-      <input type="text" name="products" />
+      <label for="Discription">product Discription:</label><br />
+      <input type="text" name="Discription" />
       <br /><br />
-      <label for="priceRange">user:</label><br />
-      <input type="text" name="user" />
+      <label for="descriptionID">Description ID:</label><br />
+      <input type="text" name="descriptionID" >
+      <br /><br />
+      <label for="briefdescription">Brief Description:</label><br />
+      <input type="text" name="briefdescription" >
+      <br /><br />
+      <label for="productimg">product img:</label><br />
+      <input type="text" name="productimg" />
+      <br /><br />
+      <label for="productUrl">Product URL:</label><br />
+      <input type="text" name="productUrl" >
+      <br /><br />
+      <label for="productID">Product ID:</label><br />
+      <input type="text" name="productID" >
+      <br /><br />
+      
+           <!-- User -->
+      <label for="userName">User Name:</label><br />
+      <input type="text" name="userName" >
+      <br /><br />
+      <label for="userpassword">User Password:</label><br />
+      <input type="text" name="userpassword" >
+      <br /><br />
+      <label for="userID">user ID</label><br />
+      <input type="text" name="userID" />
       <br /><br />
 
-      <!-- <label for="briefDescription">Brief Description:</label><br />
-      <textarea name="briefDescription" cols="30" rows="10"></textarea>
-      <br /><br /> -->
-      <!-- <label for="fullDescription">Full Description:</label><br /> -->
-      <!-- <textarea name="fullDescription" cols="30" rows="10"></textarea> -->
+
+
+
+      <label for="fullDescription">Full Description:</label><br />
+      <textarea name="fullDescription" cols="30" rows="10"></textarea>
       <br /><br />
-      <input type="submit" value="add-product" />
+      <input type="submit" value="Add-Product" />
     </form>
 
     <script src="./app.js"></script>
