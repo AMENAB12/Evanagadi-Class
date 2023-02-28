@@ -113,7 +113,7 @@ const Connection = mysql.createConnection({
       if (err) throw err;
       console.log("1 record inserted");
     });    
-
+  });
 
     
     app.listen(3001, () => console.log("Listening to : 3001"));
