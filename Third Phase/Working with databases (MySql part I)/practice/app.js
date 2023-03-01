@@ -107,13 +107,58 @@ const Connection = mysql.createConnection({
       let addedProductId = 0;
 
   let sqlAddToorders =
-    "INSERT INTO orders (order_id, product_id, user_id) VALUES (${orderid} , ${productid}, ${userid})";
+    "INSERT INTO orders (order_id, product_id, user_id) VALUES ('${orderid}' ,' ${productid}', '${userid}')";
 
     Connection.query(sqlAddToorders, function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
     });    
   });
+  // Connection.query(
+  //   "SELECT * FROM Products WHERE product_url = '" + orderid + "' ",
+  //   (err, rows, fields) => {
+  //     addedProductId = rows[0].product_id;
+  //     console.log(addedProductId);
+  //     if (err) console.log(err);
+
+      // if (addedProductId != 0) {
+      //   let sqlAddToProductDescription =
+      //     "INSERT INTO ProductDescription (product_id, product_brief_description, product_description, product_img, product_link) VALUES ('" +
+      //     addedProductId +
+      //     "', '" +
+      //     Brief +
+      //     "', '" +
+      //     Description +
+      //     "', '" +
+      //     img +
+      //     "', '" +
+      //     Url +
+      //     "' )";
+
+      //   let sqlAddToProductPrice =
+      //     "INSERT INTO ProductPrice (product_id, starting_price, price_range) VALUES ('" +
+      //     addedProductId +
+      //     "', '" +
+      //     StartPrice +
+      //     "', '" +
+      //     PriceRange +
+      //     "')";
+
+      //   Connection.query(
+      //     sqlAddToProductDescription,
+      //     function (err, result) {
+      //       if (err) throw err;
+      //       console.log("Product description inserted");
+      //     }
+        // );
+
+  //       Connection.query(sqlAddToProductPrice, function (err, result) {
+  //         if (err) throw err;
+  //         console.log("Product price inserted");
+  //       });
+  //     }
+  //   }
+  // );
 
     
     app.listen(3001, () => console.log("Listening to : 3001"));
