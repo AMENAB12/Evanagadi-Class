@@ -1,6 +1,19 @@
 import React from 'react'
 import flag from '../.././commonResource/images/icons/16.png'
+import $ from "jquery"
 export default function footer() {
+
+	// $(".footer-links-wrapper h3").on("click", function () {
+		$(document).on("click", ".footer-links-wrapper h3", function () {
+		if ($(window).width() < 768) {
+		  if ($(this).next("ul").slideToggle()) $(this).toggleClass("expanded");
+		}
+		$(window).on("resize", function () {
+		  window.location.reload();
+		});
+		});
+
+
   return (
     <div>
 
