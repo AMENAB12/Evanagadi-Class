@@ -77,29 +77,29 @@
 // // Calling reject
 // let promise = new Promise(function (resolve, reject) {
 //   resolve("Abebe");
-//   // setTimeout(() => resolve("Abebe"), 2000);
+//   // setTimeout(() => resolve("Abebe"), 5000);
 //   reject("Kebede"); // This one is ignored
 // });
 // // Don't worry about the uncaught error at this point
 // console.log(promise);
 
 // // then()
-let promise = new Promise(function (resolve, reject) {
-//   resolve("Abebe");
-  setTimeout(() => resolve("Abebe"), 2000);
-  reject("Kebede");
-});
+// let promise = new Promise(function (resolve, reject) {
+  // resolve("Abebe");
+  // setTimeout(() => resolve("Abebe"), 2000);
+  // reject("Kebede");
+// });
 
-promise.then(
-  function (result) {
-    console.log("Resolved result is: " + result);
-  },
-  function (error) {
-    // This one doesn't run as the Promise is resolved
-    // Handling of an error like this is called catching
-    console.log("Rejected error is: " + error);
-  }
-);
+// promise.then(
+//   function (result) {
+//     console.log("Resolved result is: " + result);
+//   },
+//   function (error) {
+//     // This one doesn't run as the Promise is resolved
+//     // Handling of an error like this is called catching
+//     console.log("Rejected error is: " + error);
+//   }
+// );
 
 // console.log(promise);
 
@@ -116,9 +116,9 @@ promise.then(
 // }
 
 // // One last example (Found on https://www.digitalocean.com/)
-// var isMomHappy = true;
+// var isMomHappy = false;
 
-// // Promise
+// // // Promise
 // var willIGetNewPhone = new Promise(function (resolve, reject) {
 //   if (isMomHappy) {
 //     var phone = {
@@ -147,18 +147,18 @@ promise.then(
 //     });
 // };
 
-// console.log(willIGetNewPhone);
+// // console.log(willIGetNewPhone);
 // askMom();
 
 // // Async Await
 // // Async
-// async function someFunction() {
-//   return "Abebe";
-// }
-// let a = someFunction();
-// // console.log(a);
+async function someFunction() {
+  return "Abebe";
+}
+let a = someFunction();
+console.log(a);
 
-// someFunction().then(console.log);
+// someFunction().then(casyonsole.log);
 
 // // Await
 // // Let's first implement it without using async await
